@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(assets/bg-layer-0.svg);
+  color: rgb(61, 65, 61);
+  font-family: 'Didact Gothic', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+}
+* {
+  box-sizing: border-box;
+}
+body, .bg-layer {
+  background-position: center center;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all .3s ease-out;
+}
+.bg-layer:nth-child(1) {
+  background-image: url(assets/bg-layer-1.svg);
+}
+.bg-layer:nth-child(2) {
+  background-image: url(assets/bg-layer-2.svg);
+}
+.bg-layer:nth-child(3) {
+  background-image: url(assets/bg-layer-3.svg);
+}
+.bg-layer:nth-child(4) {
+  background-image: url(assets/bg-layer-4.svg);
+  height: 105vh;
+}
+
+#header{
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Poiret One', Helvetica, Arial, sans-serif;
+  font-size: 15vw;
+  text-transform: uppercase;
+  letter-spacing: 5vw;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+#main {
+  position: absolute;
+  top: 105vh;
+  width: 100vw;
+  padding: 2em 5em 5em;
+  background-color: #3B595D;
+  color: #EFF4EB;
+}
+#content h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2em;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+#content p {
+  text-align: center;
+}
+#content ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 1.3em;
+}
+#content li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#content li:hover {
+  color: rgb(175, 175, 175);
+}
+#buttons {
+  display: none;
+  text-align: center;
+  margin: 40px 0 0;
+}
+#buttons button {
+  color: rgba(239, 244, 235, 0.87);
+  border: 1px solid rgba(239, 244, 235, 0.87);
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+#buttons button:hover {
+  color: white;
+  border-color: white;
+  transition: all .5s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(61, 65, 61);
+}
