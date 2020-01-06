@@ -1,12 +1,7 @@
-name: CI
-
-on: [push]
-
-jobs:
-  setup_env_job:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Setup env var
-      inputs:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+name: 'Env setup'
+description: 'Setup env variables'
+inputs:
+  FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+runs:
+  using: 'node12'
+  main: 'index.html'

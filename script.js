@@ -1,5 +1,7 @@
 'use strict';
 
+const core = require('@actions/core');
+
 initFirebase();
 getPoems();
 
@@ -28,7 +30,7 @@ function scrollFn() {
 }
 
 function initFirebase() {
-  const firebaseConfig = INPUT_FIREBASE_CONFIG;
+  const firebaseConfig = core.getInput('FIREBASE_CONFIG');
   firebase.initializeApp(firebaseConfig);
 }
 
