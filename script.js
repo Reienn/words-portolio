@@ -28,7 +28,7 @@ function scrollFn() {
 }
 
 function initFirebase() {
-  const firebaseConfig = env.FIREBASE_CONFIG;
+  const firebaseConfig = FIREBASE_CONFIG;
   firebase.initializeApp(firebaseConfig);
 }
 
