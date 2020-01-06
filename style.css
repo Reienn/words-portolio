@@ -61,7 +61,7 @@ body, .bg-layer {
   position: absolute;
   top: 105vh;
   width: 100vw;
-  padding: 2em 5em 5em;
+  padding: 2em 2em 5em;
   background-color: #3B595D;
   color: #EFF4EB;
 }
@@ -94,22 +94,37 @@ body, .bg-layer {
   margin: 40px 0 0;
 }
 #buttons button {
-  color: rgba(239, 244, 235, 0.87);
-  border: 1px solid rgba(239, 244, 235, 0.87);
-  border-radius: 5px;
-  padding: 10px 15px;
-  margin: 0 10px;
+  color: rgba(239, 244, 235, 0.5);
+  border: 1px solid rgba(239, 244, 235, 0.5);
+  border-radius: 20px 0 20px 0;
+  padding: 10px 15px 12px;
+  margin: 10px;
   outline: none;
   background: none;
   cursor: pointer;
   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1em;
+  min-width: 120px;
+  vertical-align: middle;
 }
 #buttons button:hover {
-  color: white;
-  border-color: white;
+  color: rgba(239, 244, 235, 0.9);
+  border-color: rgba(239, 244, 235, 0.9);
   transition: all .5s;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  color: #5e7a7e;
+}
+#footer a {
+  text-decoration: none;
+  color: #5e7a7e
+}
+#footer a:hover {
+  color: #6d8f94
 }
 
 ::-webkit-scrollbar {
