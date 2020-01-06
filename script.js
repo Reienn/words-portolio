@@ -28,7 +28,15 @@ function scrollFn() {
 }
 
 function initFirebase() {
-  const firebaseConfig = window.FIREBASE_CONFIG;
+  const firebaseConfig = {
+    apiKey: "AIzaSyAIuRx2w6_IPo5XHW38dCDYEyM2Z1QoGmo",
+    authDomain: "words-portfolio.firebaseapp.com",
+    databaseURL: "https://words-portfolio.firebaseio.com",
+    projectId: "words-portfolio",
+    storageBucket: "words-portfolio.appspot.com",
+    messagingSenderId: "511017543617",
+    appId: "1:511017543617:web:7d85809afbfe9352b2b140"
+  };
   firebase.initializeApp(firebaseConfig);
 }
 

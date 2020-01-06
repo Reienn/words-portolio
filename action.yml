@@ -1,8 +1,0 @@
-name: 'Env setup'
-description: 'Setup env variables'
-inputs:
-  FIREBASE_CONFIG:
-    description: 'Firebase config'
-runs:
-  using: 'node12'
-  main: 'index.js'
