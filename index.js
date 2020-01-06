@@ -1,4 +1,3 @@
-// const core = require('@actions/core');
-import * as core from '@actions/core';
+const core = require('@actions/core');
 
-const FIREBASE_CONFIG = core.getInput('FIREBASE_CONFIG');
+window.FIREBASE_CONFIG = core .getInput('FIREBASE_CONFIG');
