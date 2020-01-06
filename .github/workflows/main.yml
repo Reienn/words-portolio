@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  env_setup:
+    runs-on: ubuntu-latest
+    name: Env setup
+    steps:
+      - name: Env setup
+        uses: ./
+        id: env_setup
+        with:
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
