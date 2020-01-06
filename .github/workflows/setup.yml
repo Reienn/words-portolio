@@ -9,6 +9,6 @@ jobs:
 
     steps:
     - name: Setup env var
-      with:
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
