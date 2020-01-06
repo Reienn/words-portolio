@@ -42,7 +42,7 @@ function initFirebase() {
 
 function getPoems() {
   const db = firebase.firestore();
-  db.collection("poems").orderBy('created', 'asc').get().then((querySnapshot) => {
+  db.collection("poems").orderBy('created', 'desc').get().then((querySnapshot) => {
     poems = [];
     querySnapshot.forEach(doc => poems.push({id: doc.id, ...doc.data()}));
     const id = getUrlIdParam();
